@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nTa-uI-Dbn">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch Perfect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-9S-xrR">
-                                <rect key="frame" x="126.66666666666669" y="59" width="122" height="24"/>
+                                <rect key="frame" x="126.66666666666669" y="103" width="122" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -69,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="33.733133433283363"/>
+            <point key="canvasLocation" x="2002.4000000000001" y="33.251231527093594"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="Eml-Cy-bx7">
@@ -79,22 +78,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sound filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUb-Lq-1Qe" userLabel="Sound Filter">
-                                <rect key="frame" x="111.33333333333333" y="54.000000000000007" width="152.33333333333337" height="20.333333333333336"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M76-hr-iLp" userLabel="New Sound Button">
-                                <rect key="frame" x="102.66666666666669" y="738" width="170" height="30"/>
-                                <state key="normal" title="RECORD A NEW SOUND">
-                                    <color key="titleColor" red="0.02169797255" green="1" blue="0.89222231419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="oA0-Ih-LdR"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uL8-QB-qrt" userLabel="Main Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uL8-QB-qrt" userLabel="Main Stack View">
                                 <rect key="frame" x="0.0" y="271" width="375" height="270"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hXn-og-4Sl" userLabel="Top Stack View">
@@ -167,12 +151,8 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="B3t-Pq-8xN" firstAttribute="trailing" secondItem="uL8-QB-qrt" secondAttribute="trailing" id="35T-RQ-O8M"/>
-                            <constraint firstItem="fUb-Lq-1Qe" firstAttribute="centerX" secondItem="rEI-2G-fCQ" secondAttribute="centerX" id="KU4-b1-HZG"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="M76-hr-iLp" secondAttribute="bottom" constant="10" id="UeN-tp-czE"/>
                             <constraint firstItem="uL8-QB-qrt" firstAttribute="centerY" secondItem="rEI-2G-fCQ" secondAttribute="centerY" id="Vos-zS-Kag"/>
-                            <constraint firstItem="fUb-Lq-1Qe" firstAttribute="top" secondItem="B3t-Pq-8xN" secondAttribute="top" constant="10" id="hgh-MJ-W0G"/>
                             <constraint firstItem="uL8-QB-qrt" firstAttribute="centerX" secondItem="rEI-2G-fCQ" secondAttribute="centerX" id="iPh-FH-oKd"/>
-                            <constraint firstItem="M76-hr-iLp" firstAttribute="centerX" secondItem="rEI-2G-fCQ" secondAttribute="centerX" id="jG7-eB-yLE"/>
                             <constraint firstItem="uL8-QB-qrt" firstAttribute="leading" secondItem="B3t-Pq-8xN" secondAttribute="leading" id="nI8-6N-NQA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B3t-Pq-8xN"/>
@@ -181,7 +161,6 @@
                         <outlet property="chipmunkButton" destination="Ia1-CL-EQX" id="D1X-np-fCS"/>
                         <outlet property="echoButton" destination="OvT-k9-CB7" id="5w4-Ab-OlX"/>
                         <outlet property="rabbitButton" destination="M33-Yi-uuv" id="dIT-nf-Z88"/>
-                        <outlet property="recordNewSound" destination="M76-hr-iLp" id="zyM-WM-94O"/>
                         <outlet property="reverbButton" destination="r0v-6U-toG" id="c5Q-gQ-gyb"/>
                         <outlet property="snailButton" destination="Jgv-3g-BfU" id="sKU-YK-gwZ"/>
                         <outlet property="stopButton" destination="pLK-dy-ltt" id="M1P-ZP-xJf"/>
@@ -190,7 +169,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaB-nq-5wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2085.5999999999999" y="33.990147783251231"/>
+            <point key="canvasLocation" x="3028" y="33.990147783251231"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nqi-s7-kIj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nTa-uI-Dbn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DGi-io-s5S">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="97E-bm-SYA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5I-Dh-ea5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="33.251231527093594"/>
         </scene>
     </scenes>
     <resources>

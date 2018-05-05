@@ -19,7 +19,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //stopRecordingButton.isEnabled = false
         stopRecordingButton.isHidden = true
     }
     
@@ -56,7 +55,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     // MARK: - Audio Recorder Delegate
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        // if flag = true then performSegue, otherwise print the message
         flag ? performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url) : print("Recording failed")
     }
     
