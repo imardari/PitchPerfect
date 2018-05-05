@@ -46,7 +46,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
     }
     
-    // Show/hide the record and stop recording buttons as needed. Change the label accordingly
     func configureUI(recordingActive: Bool, stopRecordingActive: Bool, label: String) {
         recordButton.isHidden = recordingActive
         stopRecordingButton.isHidden = stopRecordingActive
