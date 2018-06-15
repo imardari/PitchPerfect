@@ -7,12 +7,12 @@ PitchPerfect is a fun app that records your voice and plays it back with various
 <ul>
   <li>Record your voice</li>
   <li>Play the recording back with various sounds effects, which are:</li>
-        <li>Slow</li>
-        <li>Fast</li>
-        <li>High Pitch</li>
-        <li>Low Pitch</li>
-        <li>Echo</li>
-        <li>Reverb</li>
+        -Slow
+        -Fast
+        -High Pitch
+        -Low Pitch
+        -Echo
+        -Reverb
 </ul>
  
 ## Requirements
